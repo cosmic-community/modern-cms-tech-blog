@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-gray-900 bg-white;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+  }
+}
+
+/* Syntax highlighting overrides */
+pre code.hljs {
+  @apply rounded-lg text-sm;
+}
